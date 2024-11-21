@@ -1,0 +1,163 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: linear-gradient(to bottom, #141E30, #243B55); */
+    color: #1c1b1b;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.category {
+    flex: 1 1 300px; /* Flex grow, flex shrink, and flex basis */
+    margin: 15px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.category h3 {
+    text-align: center;
+    color: #03a9f4;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+    border: 3px solid #03a9f4;
+    transition: transform 0.3s ease;
+}
+
+.card img:hover {
+    transform: rotate(10deg) scale(1.1);
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-button {
+    background-color: #03a9f4;
+    color: #fff;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.save-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.card button:hover {
+    transform: scale(1.1);
+}
+
+.add-button {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: linear-gradient(90deg, #03a9f4, #4caf50);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.filter-input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 2px solid #03a9f4;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color: black;
+    font-size: 1rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.filter-input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #03a9f4;
+}
+
+.form-group input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #03a9f4;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    color:black;
+    font-size: 1rem;
+}
+
+.form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #03a9f4;
+}
+
+.cart-p {
+    background: linear-gradient(to right, #03a9f4, #4caf50);
+    padding: 8px 15px;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .category {
+        flex: 1 1 100%;
+    }
+}

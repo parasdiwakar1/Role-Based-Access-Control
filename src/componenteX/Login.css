@@ -1,0 +1,173 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Segoe UI', sans-serif;
+}
+
+/* General Styling */
+.login, .card-title, .card-brandX, .main-box {
+  padding: 10px;
+  text-align: center;
+}
+
+.label {
+  text-align: left;
+  /* margin-top: 10px; */
+}
+
+.login-h1 {
+  color: black;
+  margin: 20px;
+  text-shadow: -3px 3px 2px rgb(130, 132, 131);
+}
+
+/* Login Container */
+.login {
+  height: auto;
+  width: 90%;
+  max-width: 300px;
+  background-color: aliceblue;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.login:hover {
+  transform: scale(1.05);
+  background-color: #f0f8ff;
+}
+
+.databox {
+  margin-top: 30px;
+}
+
+input {
+  border-radius: 10px;
+  margin: 10px 0;
+  border: solid 2px #121111;
+  height: 30px;
+  width: 100%;
+  font-size: 16px;
+  color: black;
+  padding: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  border-color: #00f;
+  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+#form-container {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: black;
+  margin: 0 auto;
+  height: auto;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.submit_s, .submit {
+  /* margin-top: 30px; */
+  height: 40px;
+  width: 100%;
+  background-color: rgb(55, 53, 53);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.submit_s:hover, .submit:hover {
+  background-color: rgb(24, 17, 163);
+  transform: scale(1.05);
+}
+
+.submit_s:active, .submit:active {
+  transform: scale(1);
+}
+
+/* Login Box */
+.loginbox {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: rgb(230, 225, 225);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  border-radius: 20px;
+  animation: fadeIn 1s ease-in-out;
+  width: 350px;
+  height: 440px;
+}
+.titleR{
+  font-size: 30px;
+}
+.login-y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  background-color: #f0f0f0;
+  padding: 20px; 
+  /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210205/pngtree-flat-business-login-box-login-page-image_544861.jpg');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; */
+}
+
+.login-img {
+  height: 500px;
+  width: 350px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-img {
+    display: none;
+  }
+  .loginbox {
+    flex-direction: column;
+    width: 100%; /* Ensure the box takes the full width of the screen */
+  }
+  .login-y{
+    height: 80vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginbox {
+    padding: 10px;
+    width: 100%; 
+  }
+  #form-container {
+    border-radius: 20px;
+    padding: 10px;
+    width: 100%; 
+    max-width: 300px;
+  }
+  input {
+    font-size: 14px; 
+  }
+  .submit_s, .submit {
+    height: 35px; 
+  }
+}
