@@ -1,8 +1,9 @@
+/* General Styles */
 .navbar2 {
   background: linear-gradient(90deg, #1f4037, #99f2c8);
   padding: 15px 30px;
   border-bottom: 3px solid #0a0a0a;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -80,23 +81,6 @@
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.7);
 }
 
-.loginS {
-  background: linear-gradient(to right, #ff6a00, #ee0979);
-  padding: 8px 20px;
-  border-radius: 20px;
-  font-size: 16px;
-  color: #fff;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.loginS:hover {
-  transform: scale(1.1);
-  background: linear-gradient(to right, #ee0979, #ff6a00);
-  box-shadow: 0 8px 16px rgba(255, 107, 80, 0.5);
-}
-
 .hamburger {
   display: none;
   font-size: 30px;
@@ -109,71 +93,53 @@
   color: #ffdc3d;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: linear-gradient(90deg, #283c86, #45a247);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  top: 60px;
-  right: 20px;
-  padding: 15px;
-  border-radius: 15px;
-  animation: fadeIn 0.5s ease;
-}
-
-.dropdown-content ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.dropdown-content li {
-  padding: 10px 15px;
-  color: #fff;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 10px;
-}
-
-.dropdown-content li:hover {
-  background-color: #ff5f57;
-  transform: scale(1.1);
-}
-
-.dropdown-content.show {
-  display: block;
+.nav2-ul.show {
+  display: block !important;
 }
 
 @keyframes fadeIn {
   from {
-      opacity: 0;
-      transform: translateY(-10px);
+    opacity: 0;
+    transform: translateY(-10px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
+/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar-content {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-
-  .loginS {
-      display: none;
+    /* flex-direction: column; */
+    align-items: flex-start;
   }
 
   .nav2-ul {
-      display: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: linear-gradient(90deg, #283c86, #45a247);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 15px 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 15px 15px;
+  }
+  .navbar2{
+    display: flex;
+  }
+
+  .nav2-ul li {
+    padding: 10px 0;
+    width: 100%;
   }
 
   .hamburger {
-      display: block;
+    display: block;
   }
-
-  .dropdown-content.show {
-      display: block;
+  .nav2-imgS{
+    display: none;
   }
 }

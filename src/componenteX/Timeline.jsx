@@ -1,15 +1,13 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 import './Timeline.css';
 
 function Timeline() {
-  
   const [entries, setEntries] = useState([]);
-
   const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 
-  const addRow = () => {
+  const addRow = useCallback(() => {
     setEntries([...entries, { task: '', times: Array(7).fill(0) }]);
-  };
+  }, [entries]);
 
   const handleTaskChange = (index, value) => {
     const newEntries = [...entries];
@@ -19,26 +17,26 @@ function Timeline() {
 
   const handleTimeChange = (entryIndex, timeIndex, value) => {
     const newEntries = [...entries];
-    newEntries[entryIndex].times[timeIndex] = parseInt(value, 10) || 0;
+    const sanitizedValue = Math.max(0, Math.min(parseInt(value, 10) || 0, 24));
+    newEntries[entryIndex].times[timeIndex] = sanitizedValue;
     setEntries(newEntries);
   };
 
   return (
     <div className="timesheet-app">
       <header>
-        <h1>TimesLine Tracker</h1>
-        
+        <h1>Timeline Tracker</h1>
       </header>
 
       <main>
-        
-
         <div className="timesheet-container">
           <table>
             <thead>
               <tr>
                 <th>Task / Location</th>
-                {days.map((day, index) => <th key={index}>{day}</th>)}
+                {days.map((day, index) => (
+                  <th key={index}>{day}</th>
+                ))}
                 <th>Total</th>
               </tr>
             </thead>
@@ -47,9 +45,11 @@ function Timeline() {
                 <tr>
                   <td colSpan="9" className="no-entries">
                     <div>
-                    <i class="fa-solid fa-circle-exclamation"></i>
+                      <i className="fa-solid fa-circle-exclamation"></i>
                       <p>No time tracked this week!</p>
-                      <button className='addrow' onClick={addRow}>Add a new entry</button>
+                      <button className="add-row" onClick={addRow}>
+                        Add a new entry
+                      </button>
                     </div>
                   </td>
                 </tr>
@@ -59,17 +59,26 @@ function Timeline() {
                     <td>
                       <input
                         type="text"
+                        placeholder="Enter task or location"
                         value={entry.task}
-                        onChange={(e) => handleTaskChange(entryIndex, e.target.value)}
+                        onChange={(e) =>
+                          handleTaskChange(entryIndex, e.target.value)
+                        }
+                        aria-label={`Task ${entryIndex + 1}`}
                       />
                     </td>
                     {entry.times.map((time, timeIndex) => (
                       <td key={timeIndex}>
                         <input
-                        className='inputTime'
+                          className="inputTime"
                           type="number"
                           value={time}
-                          onChange={(e) => handleTimeChange(entryIndex, timeIndex, e.target.value)}
+                          onChange={(e) =>
+                            handleTimeChange(entryIndex, timeIndex, e.target.value)
+                          }
+                          aria-label={`Time for ${days[timeIndex]} - Task ${
+                            entryIndex + 1
+                          }`}
                         />
                       </td>
                     ))}
@@ -81,7 +90,9 @@ function Timeline() {
           </table>
         </div>
 
-        <button className="add-row" onClick={addRow}>+ Add Row</button>
+        <button className="add-row" onClick={addRow}>
+          + Add Row
+        </button>
       </main>
     </div>
   );
