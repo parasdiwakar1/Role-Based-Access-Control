@@ -1,12 +1,6 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', 'Segoe UI', sans-serif;
-}
 
-/* General Styling */
+
+
 .login, .card-title, .card-brandX, .main-box {
   padding: 10px;
   text-align: center;
@@ -14,30 +8,30 @@
 
 .label {
   text-align: left;
-  /* margin-top: 10px; */
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .login-h1 {
-  color: black;
+  color: #2d3436;
   margin: 20px;
-  text-shadow: -3px 3px 2px rgb(130, 132, 131);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Login Container */
 .login {
-  height: auto;
   width: 90%;
-  max-width: 300px;
-  background-color: aliceblue;
-  border: 2px solid black;
-  border-radius: 10px;
+  max-width: 350px;
+  background-color: #ffffff;
+  border: 1px solid #dcdde1;
+  border-radius: 15px;
   margin: 20px auto;
-  transition: transform 0.3s, background-color 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
 .login:hover {
-  transform: scale(1.05);
-  background-color: #f0f8ff;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
 }
 
 .databox {
@@ -45,47 +39,45 @@
 }
 
 input {
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 10px 0;
-  border: solid 2px #121111;
-  height: 30px;
+  border: 1px solid #b2bec3;
+  height: 35px;
   width: 100%;
   font-size: 16px;
-  color: black;
-  padding: 5px;
+  color: #2d3436;
+  padding: 5px 10px;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input:focus {
-  border-color: #00f;
-  box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+  border-color: #74b9ff;
+  box-shadow: 0 0 5px rgba(116, 185, 255, 0.5);
+  outline: none;
 }
 
 #form-container {
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  color: black;
+  color: #2d3436;
   margin: 0 auto;
-  height: auto;
   text-align: center;
   width: 100%;
   max-width: 400px;
 }
 
 .submit_s, .submit {
-  /* margin-top: 30px; */
   height: 40px;
   width: 100%;
-  background-color: rgb(55, 53, 53);
+  background-color: #0984e3;
   color: white;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  font-size: 16px;
   transition: background-color 0.3s, transform 0.3s;
 }
 
 .submit_s:hover, .submit:hover {
-  background-color: rgb(24, 17, 163);
+  background-color: #74b9ff;
   transform: scale(1.05);
 }
 
@@ -95,33 +87,32 @@ input:focus {
 
 /* Login Box */
 .loginbox {
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  background-color: rgb(230, 225, 225);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
+  background-color: #f9f9f9;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 25px;
   margin: 0 auto;
   border-radius: 20px;
   animation: fadeIn 1s ease-in-out;
-  width: 350px;
-  height: 440px;
+  width: 400px;
 }
-.titleR{
-  font-size: 30px;
+
+.titleR {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2d3436;
 }
+
 .login-y {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
-  background-color: #f0f0f0;
-  padding: 20px; 
-  /* background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20210205/pngtree-flat-business-login-box-login-page-image_544861.jpg');
-  background-size: cover; 
-  background-position: center; 
-  background-repeat: no-repeat; */
+  padding: 20px;
+  background: #f5f6fa;
 }
 
 .login-img {
@@ -146,28 +137,25 @@ input:focus {
   }
   .loginbox {
     flex-direction: column;
-    width: 100%; /* Ensure the box takes the full width of the screen */
-  }
-  .login-y{
-    height: 80vh;
+    width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .loginbox {
-    padding: 10px;
-    width: 100%; 
+    padding: 15px;
+    width: 100%;
   }
   #form-container {
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 10px;
-    width: 100%; 
+    width: 100%;
     max-width: 300px;
   }
   input {
-    font-size: 14px; 
+    font-size: 14px;
   }
   .submit_s, .submit {
-    height: 35px; 
+    height: 35px;
   }
 }

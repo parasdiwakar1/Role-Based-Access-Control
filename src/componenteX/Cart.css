@@ -1,4 +1,4 @@
-/* General styles */
+
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -113,7 +113,7 @@ body {
 }
 
 .filter-input {
-    width: 100%;
+    width: 300px;
     padding: 15px;
     margin-bottom: 20px;
     border: 2px solid #03a9f4;
@@ -155,7 +155,7 @@ body {
     font-weight: bold;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 768px) {
     .category {
         flex: 1 1 100%;

@@ -26,7 +26,7 @@ function Login({ setIsLogin, setShowLogin }) {
     return (
         <div id="form-container">
             <h1 className="login-h1">Hi there!</h1>
-            <h4>Welcome to Trello clone, <br /> so happy to see you!</h4>
+            <h4>Welcome to RBAC, <br /> so happy to see you!</h4>
             <div className="databox">
                 <div className="label">Username</div>
                 <input

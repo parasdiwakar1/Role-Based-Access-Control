@@ -110,6 +110,7 @@ body {
   background: linear-gradient(135deg, #514caf, #35ad3b);
   border-radius: 6px;
   animation: growBar 1s ease-in-out;
+  
 }
 
 @keyframes growBar {

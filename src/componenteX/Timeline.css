@@ -11,7 +11,7 @@ body {
   color: #333;
 }
 
-/* Main container */
+
 .timesheet-app {
   max-width: 1200px;
   margin: 0 auto;
@@ -22,7 +22,7 @@ body {
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Header Section */
+
 header {
   display: flex;
   justify-content: space-between;
@@ -38,7 +38,7 @@ header h1 {
   color: #1a237e;
 }
 
-/* Button styles */
+
 .addrow {
   background-color: #1e88e5;
   padding: 12px 24px;
@@ -55,7 +55,7 @@ header h1 {
   transform: translateY(-2px);
 }
 
-/* Timesheet table styles */
+
 .timesheet-container {
   overflow-x: auto;
   margin-top: 25px;
@@ -89,7 +89,7 @@ td:hover {
   cursor: pointer;
 }
 
-/* Empty entries section */
+
 .no-entries {
   text-align: center;
   padding: 40px;
@@ -106,7 +106,7 @@ td:hover {
   margin-top: 10px;
 }
 
-/* Add row button */
+
 .add-row {
   margin-top: 25px;
   padding: 12px 30px;
@@ -124,7 +124,7 @@ td:hover {
   transform: translateY(-2px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -162,7 +162,7 @@ td:hover {
   }
 }
 
-/* Animation Effects */
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -172,7 +172,7 @@ td:hover {
   }
 }
 
-/* Input focus effect */
+
 input[type="number"], input[type="text"] {
   border-radius: 4px;
   padding: 10px;
@@ -189,7 +189,7 @@ input[type="number"]:focus, input[type="text"]:focus {
   transform: scale(1.02);
 }
 
-/* Button animations */
+
 button {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -199,7 +199,7 @@ button:hover {
   transform: translateY(-2px);
 }
 
-/* Responsive typography */
+
 @media (max-width: 480px) {
   header h1 {
     font-size: 1.8rem;
