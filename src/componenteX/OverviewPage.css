@@ -140,7 +140,7 @@ h1 {
   background-color: #4caf50;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 768px) {
   .overview-card, .activity-card {
     width: 100%;

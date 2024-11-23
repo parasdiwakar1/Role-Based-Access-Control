@@ -1,161 +1,116 @@
 
-
-
-.login, .card-title, .card-brandX, .main-box {
-  padding: 10px;
+#form-container {
+  margin: 0 auto;
+  padding: 20px;
   text-align: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 200px;
 }
+
+
+.login-h1, .titleR {
+  font-size: 24px;
+  color: #2d3436;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+  font-size: 16px;
+  color: #636e72;
+  margin-bottom: 20px;
+}
+
 
 .label {
   text-align: left;
   margin-bottom: 5px;
+  font-size: 14px;
   font-weight: bold;
-}
-
-.login-h1 {
   color: #2d3436;
-  margin: 20px;
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.login {
-  width: 90%;
-  max-width: 350px;
-  background-color: #ffffff;
-  border: 1px solid #dcdde1;
-  border-radius: 15px;
-  margin: 20px auto;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-}
 
-.login:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
-}
-
-.databox {
-  margin-top: 30px;
-}
-
-input {
-  border-radius: 8px;
-  margin: 10px 0;
-  border: 1px solid #b2bec3;
-  height: 35px;
+input[type="text"], input[type="email"], input[type="password"], input[type="button"] {
+  display: block;
   width: 100%;
-  font-size: 16px;
-  color: #2d3436;
-  padding: 5px 10px;
-  transition: border-color 0.3s, box-shadow 0.3s;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s;
 }
 
-input:focus {
-  border-color: #74b9ff;
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #0984e3;
   box-shadow: 0 0 5px rgba(116, 185, 255, 0.5);
   outline: none;
 }
 
-#form-container {
-  color: #2d3436;
-  margin: 0 auto;
-  text-align: center;
-  width: 100%;
-  max-width: 400px;
-}
 
-.submit_s, .submit {
-  height: 40px;
-  width: 100%;
+.submit, .submit_s {
   background-color: #0984e3;
   color: white;
-  cursor: pointer;
   border: none;
-  border-radius: 8px;
+  padding: 10px;
   font-size: 16px;
-  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
-.submit_s:hover, .submit:hover {
+.submit:hover, .submit_s:hover {
   background-color: #74b9ff;
   transform: scale(1.05);
 }
 
-.submit_s:active, .submit:active {
-  transform: scale(1);
+
+.msg {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #636e72;
 }
 
-/* Login Box */
-.loginbox {
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px;
-  background-color: #f9f9f9;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
-  margin: 0 auto;
-  border-radius: 20px;
-  animation: fadeIn 1s ease-in-out;
-  width: 400px;
-}
-
-.titleR {
-  font-size: 28px;
+.msg a {
+  color: #0984e3;
+  text-decoration: none;
   font-weight: bold;
-  color: #2d3436;
+  cursor: pointer;
 }
 
-.login-y {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 20px;
-  background: #f5f6fa;
+.msg a:hover {
+  text-decoration: underline;
 }
 
-.login-img {
-  height: 500px;
-  width: 350px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
 @media (max-width: 768px) {
-  .login-img {
-    display: none;
+  #form-container {
+    padding: 15px;
+    max-width: 90%;
   }
-  .loginbox {
-    flex-direction: column;
-    width: 100%;
+
+  input[type="text"], input[type="email"], input[type="password"], input[type="button"] {
+    font-size: 14px;
+  }
+
+  .submit, .submit_s {
+    padding: 8px;
+    font-size: 14px;
   }
 }
 
 @media (max-width: 480px) {
-  .loginbox {
-    padding: 15px;
-    width: 100%;
-  }
-  #form-container {
-    border-radius: 15px;
-    padding: 10px;
-    width: 100%;
-    max-width: 300px;
-  }
-  input {
+  h4 {
     font-size: 14px;
   }
-  .submit_s, .submit {
-    height: 35px;
+
+  .label, .msg {
+    font-size: 12px;
   }
 }

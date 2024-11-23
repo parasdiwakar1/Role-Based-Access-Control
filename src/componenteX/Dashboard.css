@@ -1,4 +1,4 @@
-/* Updated Colors & Fonts */
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -30,8 +30,8 @@ body {
 }
 
 .dash-h1 {
-  margin-bottom: 20px;
-  font-size: 3rem;
+  margin-bottom: 15px;
+  font-size: 2.5rem;
   color: #222;
   font-weight: bold;
   text-transform: uppercase;
