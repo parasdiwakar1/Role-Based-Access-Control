@@ -127,7 +127,7 @@ Clone the repository:
 
 bash
 Copy code
-git clone https://github.com/your-username/rbac-ui.git
+git clone [https://github.com/your-username/rbac-ui.git](https://github.com/parasdiwakar1/Role-Based-Access-Control/tree/main)
 cd rbac-ui
 Install dependencies:
 
@@ -172,3 +172,6 @@ License![Screenshot 2024-11-23 144639](https://github.com/user-attachments/asset
 16619)
 ![Screenshot 2024-11-23 144743](https://github.com/user-attachments/assets/e74903dd-cde1-40b4-9f74-8935758c5167)
 ![Screenshot 2024-11-23 144845](https://github.com/user-attachments/assets/afda3c18-de90-499b-8b1b-7e3d4a3f8528)
+
+![Screenshot 2024-11-23 145007](https://github.com/user-attachments/assets/a8a11605-776b-455a-9f7e-bbc03fcf60dd)
+
