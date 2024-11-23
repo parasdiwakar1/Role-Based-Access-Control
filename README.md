@@ -167,7 +167,8 @@ Include dark mode for better accessibility.
 This project is licensed under the MIT License.
 License![Screenshot 2024-11-23 144639](https://github.com/user-attachments/assets/070b6d79-465e-42e4-bb5b-78aeef74c904)
 
-![Screenshot 2024-11-23 145007](https://github.com/user-attachments/assets/62a9d4fc-2000-4458-905b-4d6485d![Screenshot 2024-11-23 144809](https://github.com/user-attachments/assets/8b8fd0e2-fd7c-4547-b66d-91083c30eb75)
-16619)![Screenshot 2024-11-23 144743](https://github.com/user-attachments/assets/e74903dd-cde1-40b4-9f74-8935758c5167)
-
+![Screenshot 2024-11-23 145007](https://github.com/user-attachments/assets/62a9d4fc-2000-4458-905b-4d6485d
+![Screenshot 2024-11-23 144809](https://github.com/user-attachments/assets/8b8fd0e2-fd7c-4547-b66d-91083c30eb75)
+16619)
+![Screenshot 2024-11-23 144743](https://github.com/user-attachments/assets/e74903dd-cde1-40b4-9f74-8935758c5167)
 ![Screenshot 2024-11-23 144845](https://github.com/user-attachments/assets/afda3c18-de90-499b-8b1b-7e3d4a3f8528)
